@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #fffefb;
+  /* background-image: url('../Guess How Many (Guessing Number Game)/assets/bar_start.gif'); */
+  background-image: url(' https://i.pinimg.com/originals/46/4f/d9/464fd9d9ba7c3450c9a8ae98f3e03362.gif');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #10110f;
+  animation: fade 1s ease-in;
+}
+
+/* LAYOUT */
+.start-container {
+  height: 45vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-container .start {
+  background-color: #c9e89a;
+  min-width: 15%;
+  min-height: 20%;
+  border-radius: 1px;
+}
+
+header {
+  position: relative;
+  height: 35vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 40vh;
+  color: #eee;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 8.2rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 0, 0);
+}
+.about {
+  top: 80%;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.number {
+  /* background: #fff4b1; */
+  background-image: url('https://i.redd.it/5aamsa906qj01.gif');
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.header-info {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+.between {
+  margin: 1rem 0;
+}
+
+.again {
+  margin-bottom: 20px;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #350202;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* background-color: #ccc; */
+  color: red;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+.home {
+  margin-bottom: 20px;
+  background-color: red;
+  color: #90ee90;
+}
+.again {
+  background-color: #000000;
+  color: #ff0000;
+}
+
+.label-score {
+  margin-bottom: 1rem;
+}
+main {
+  display: none;
+}
+.again,
+.home,
+.number,
+.header-info,
+.how,
+.try {
+  display: none;
+}
+.label-score {
+  color: #90ee90;
+}
+.label-highscore {
+  color: #47832e;
+}
+.message {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+.kill {
+  color: red;
+}
+.lose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.check {
+  background-color: black;
+  color: url('https://i.redd.it/5aamsa906qj01.gif');
+}
+.brighten {
+  background-image: url('https://cdna.artstation.com/p/assets/images/images/039/867/982/original/pixel-jeff-night2.gif?1627188612');
+  animation: theHome 3s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    color: red;
+    filter: drop-shadow(100px);
+    filter: blur(50px);
+  }
+  50% {
+    filter: blur(40px);
+  }
+  60% {
+    filter: blur(30px);
+  }
+  80% {
+    filter: blur(20px);
+  }
+}
+
+@media (max-width: 426px) {
+  body {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .between {
+    text-align: center;
+  }
+  .message {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .label-highscore {
+    margin-bottom: 20px;
+  }
+  .label-score,
+  .label-highscore,
+  .header-info {
+    font-size: 1rem;
+  }
+  .number {
+    width: 15rem;
+    padding: 1.5rem 0rem;
+  }
+}
