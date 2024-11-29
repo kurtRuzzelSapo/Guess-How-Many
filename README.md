@@ -1,4 +1,6 @@
+![The Guy's Game](./assets/icon.png)
 # 🎮 **The Guy's Game** – A Dark Psychological Guessing Game  
+
 **"Are you ready to gamble... with your life?"**  
 
 A twisted psychological guessing game where you wager against a sinister figure known only as **"The Guy."** Answer his unsettling, mind-bending questions correctly to earn money, but beware—one wrong answer might cost you everything. Will you escape with your life, or succumb to the darkness?
